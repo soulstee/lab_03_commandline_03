@@ -12,9 +12,9 @@ Follow the instructions line-by-line.
 [NO OUTPUT]
 ----------
 ==========
-2. Find out if mtec1002-lab-02 already exists (from the previous lab).  If it doesn't, go back to the previous lab and find the steps regarding downloading the lab materials.
+2. Find out if mtec-1003-lab-03 already exists (from the previous lab).  If it doesn't, go back to the previous lab and find the steps regarding downloading the lab materials.
 
-(See steps 1-8 in http://foureyes.github.io/mtec1002-spring2014/labs/03/lab-03-part-02-working-with-files.txt)
+(See steps 1-8 in https://github.com/entertainmenttechnology/Viera-MTEC1003-fall-2018/raw/gh-pages/mtec-1003-lab-03.tar.gz
 [NO OUTPUT]
 ----------
 ==========
@@ -79,7 +79,7 @@ Write the command that you used to move the file.  Copy and paste the output of 
 
 
 ==========
-12. Go up one directory so that you're in ~/mtec1002-lab-03.
+12. Go up one directory so that you're in ~/mtec-1003-lab-03
 [NO OUTPUT]
 ----------
 

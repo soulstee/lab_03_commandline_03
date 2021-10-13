@@ -16,7 +16,7 @@ This lab will review downloading and uncompressing files, and it will get us set
 Write the command that you used to do this below:
 ----------
 
-
+"cd ~"
 
 ==========
 2. Prove that you're in your home directory.
@@ -24,7 +24,8 @@ Write the command that you used to do this below:
 Write the command that you used to do this - as well as its output - below :
 ----------
 
-
+"cd ~"
+Administrator@DESKTOP-KP8RKO4 MINGW64 ~
 
 ==========
 3. Are there any directories or files in your directory that have the word mtec1002 in it?
@@ -32,13 +33,13 @@ Write the command that you used to do this - as well as its output - below :
 Write the command(s) that you used to determine this - as well as its output - below:
 ----------
 
-
+"ls ~"
 
 ==========
 4. If there are directories or files in your home directory that have the word mtec1002 in them, list them below (otherwise skip this step):
 ----------
 
-
+"No mtec1002 folder exist within my directory"
 
 ==========
 5. Delete these directories from your home folder by using this command:
@@ -52,7 +53,7 @@ $ rm -rf mtec1002-labs-02
 (skip if these directories don't exist)
 ----------
 
-
+N/A
 
 ==========
 6.  A compressed archive (.tar.gz) of the lab files can be found at this url: 
@@ -65,17 +66,24 @@ This command should have a *flag* to specify the output file.  MAKE SURE TO NAME
 
 Write the command(s) that you used to download this file - as well as its output - below:
 ----------
+"curl -o mtec1002-lab-03.tar.gz. http://foureyes.github.io/mtec1002-spring2014/labs/03/mtec1002-lab-03.tar.gz"
 
-
-
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--  100   162  100   162    0     0   2536      0 --:--:-- --:--:-- --:--:--  2571
 ==========
 7.  Uncompress the file that you just downloaded.
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
+"$ unzip mtec1002-lab-03.tar.gz."
 
-
-
+Archive:  mtec1002-lab-03.tar.gz.
+  End-of-central-directory signature not found.  Either this file is not
+  a zipfile, or it constitutes one disk of a multi-part archive.  In the
+  latter case the central directory and zipfile comment will be found on
+  the last disk(s) of this archive.
+unzip:  cannot find zipfile directory in one of mtec1002-lab-03.tar.gz. or        mtec1002-lab-03.tar.gz..zip, and cannot find mtec1002-lab-03.tar.gz..ZIP, period.
 ==========
 8.  You should now have a directory called mtec1002-lab-03 in your home directory.  Verify that this directory exists.
 
@@ -89,7 +97,7 @@ Otherwise...
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
 
-
+"No output"
 
 ==========
 9.  What directories are in the mtec1002-lab-03 folder?
@@ -97,7 +105,7 @@ Write the command(s) that you used to do this - as well as its output - below:
 Write the command(s) that you used to determine this - as well as its output - below:
 ----------
 
-
+"No output"
 
 ==========
 10.  Now... go back home.  Then change to the science-fiction directory using a relative path.  The directory is located in books... which is located in the mtec1002-lab-03 directory.  Verify you're in the right directory using pwd.
@@ -105,7 +113,7 @@ Write the command(s) that you used to determine this - as well as its output - b
 Write the command(s) (including going home) that you used to do this below:
 ----------
 
-
+"No output"
 
 ==========
 11.  Write the files that are in the science fiction directory below.
@@ -113,14 +121,14 @@ Write the command(s) (including going home) that you used to do this below:
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
 
-
+"No output"
 
 ==========
 12.  Again, go back to your home directory.  Now... go to the science-fiction directory using an absolute path!  Verify that you're in the right directory using pwd.
 
 Write the command(s) that you used to do this below:
 ----------
-
+"No output"
 ==========
 OPTIONAL
 13. Immediately change back to the mtec1002-lab-03 folder with a single command using a *relative* path.

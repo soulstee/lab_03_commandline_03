@@ -37,6 +37,49 @@ $ ls
 Copy and paste the output below.
 ----------
 
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+'Creative Cloud Files Thomas.GarciaMena@mail.citytech.cuny.edu ebb0cc9769ad41c95df81dfe5ae98a7aa9ffbf97269365623b1f5e20e344141b'/
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ foo.txt
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ media-computation/
+ MicrosoftEdgeBackups/
+ mtec1002-lab-03.tar.gz
+ mtec1002-lab-03.tar.gz.
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{a8754ca5-b4df-11ea-8165-c9f7816df390}.TxR.0.regtrans-ms
+ NTUSER.DAT{a8754ca5-b4df-11ea-8165-c9f7816df390}.TxR.1.regtrans-ms
+ NTUSER.DAT{a8754ca5-b4df-11ea-8165-c9f7816df390}.TxR.2.regtrans-ms
+ NTUSER.DAT{a8754ca5-b4df-11ea-8165-c9f7816df390}.TxR.blf
+ NTUSER.DAT{a8754ca6-b4df-11ea-8165-c9f7816df390}.TM.blf
+ NTUSER.DAT{a8754ca6-b4df-11ea-8165-c9f7816df390}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{a8754ca6-b4df-11ea-8165-c9f7816df390}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
 
 
 ==========
@@ -53,7 +96,7 @@ $ touch bar.txt
 Copy and paste the output below.
 ----------
 
-
+$ cat bar.txt
 
 ==========
 9. Create a copy of bar.txt called baz.txt and then list the files again.
@@ -62,13 +105,63 @@ Copy and paste the output below.
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
 
+$ cp -r bar.txt baz.txt
 
+baz.txt
 
 ==========
 10. Delete the file called bar.txt and then list the files again.
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
 ----------
+
+$ rm bar.txt
+ls ~
+
+'3D Objects'/
+ AppData/
+'Application Data'@
+ baz.txt
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+'Creative Cloud Files Thomas.GarciaMena@mail.citytech.cuny.edu ebb0cc9769ad41c95df81dfe5ae98a7aa9ffbf97269365623b1f5e20e344141b'/
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ foo.txt
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ media-computation/
+ MicrosoftEdgeBackups/
+ mtec1002-lab-03.tar.gz
+ mtec1002-lab-03.tar.gz.
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{a8754ca5-b4df-11ea-8165-c9f7816df390}.TxR.0.regtrans-ms       
+ NTUSER.DAT{a8754ca5-b4df-11ea-8165-c9f7816df390}.TxR.1.regtrans-ms       
+ NTUSER.DAT{a8754ca5-b4df-11ea-8165-c9f7816df390}.TxR.2.regtrans-ms       
+ NTUSER.DAT{a8754ca5-b4df-11ea-8165-c9f7816df390}.TxR.blf
+ NTUSER.DAT{a8754ca6-b4df-11ea-8165-c9f7816df390}.TM.blf
+ NTUSER.DAT{a8754ca6-b4df-11ea-8165-c9f7816df390}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{a8754ca6-b4df-11ea-8165-c9f7816df390}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
 ==========
 11. Move the file called foo.txt to qux.txt and then list the files again.
 
@@ -76,7 +169,7 @@ Write the command that you used to remove the file.  Copy and paste the output o
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
 
-
+$ mv.footxt qux.txt
 
 ==========
 12. Go up one directory so that you're in ~/mtec1002-lab-03.
@@ -91,7 +184,9 @@ Write the command that you used to move the file.  Copy and paste the output of 
 Write out the command that you used and what happened.
 ----------
 
+$ rmdir my_files
 
+rmdir: failed to remove 'my_files': No such file or directory
 
 ==========
 14. Try removing the directory called my_files using rm.
@@ -99,8 +194,9 @@ Write out the command that you used and what happened.
 Write out the command that you used and what happened.
 ----------
 
+$ rm my_files
 
-
+rm: cannot remove 'my_files': No such file or directory
 ==========
 15. MAKE SURE YOU'RE IN THE mtec1002-lab-03 directory!  
 
@@ -108,8 +204,7 @@ Force the removal of the directory and files using the -rf flag
 
 $ rm -rf my_files
 ----------
-
-
+$rm -rf my_files
 
 ==========
 16. There's a txt file version of a book located in the mtec1002-lab-03 folder.  It is in the following directory if you're in the lab folder:
@@ -121,7 +216,7 @@ Use the command called cat on the file to show its contents.
 Describe what happened below.
 ----------
 
-
+[No OUTPUT]
 
 ==========
 17. That was a lot of text.  Let's find ways to limit it.  Using the same file...
@@ -133,7 +228,7 @@ Use the command, head, on the file to show the contents of the beginning of the 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
 
-
+[No OUTPUT]
 
 ==========
 18. Using the same file again!
@@ -145,7 +240,7 @@ Use tail on the file to show the contents of the end of the file.
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
 
-
+[No OUTPUT]
 
 ==========
 19. Using the same file...
@@ -157,7 +252,7 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
 
-
+[No OUTPUT]
 
 ==========
 20. Describe what situations you would use the following commands for viewing files: less, more, cat, tail, head
@@ -165,14 +260,15 @@ Write the command that you used below.  Describe what spacebar and q does after 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
 
-
+[No OUTPUT]
 
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
 
-
+[No OUTPUT]
 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
+[No OUTPUT]

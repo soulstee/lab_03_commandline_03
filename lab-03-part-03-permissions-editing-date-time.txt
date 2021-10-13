@@ -18,7 +18,9 @@ We're going to be writing a shell script.  First, though... let's figure out wha
 What command did you use, and what was its output?
 ----------
 
+$ date
 
+"Wed, Oct 13, 2021  3:34:59 PM"
 
 ==========
 2. Print out a calendar for this month.
@@ -26,7 +28,9 @@ What command did you use, and what was its output?
 What command did you use, and what was its output?
 ----------
 
+$ cal
 
+bash: cal: command not found
 
 ==========
 3. Go to your home directory.  Verify that you're in your home directory.
@@ -34,7 +38,7 @@ What command did you use, and what was its output?
 What commands did you use to do this?
 ----------
 
-
+$ cd ~/Desktop
 
 ==========
 4. Create an empty file called copy_to_backup.sh.  Verify that the file exists.
@@ -42,7 +46,7 @@ What commands did you use to do this?
 What commands did you use to do this?
 ----------
 
-
+$ touch copy_to_backup.sh.
 
 ==========
 5. What are the permissions on your copy_to_backup.sh.
@@ -50,7 +54,7 @@ What commands did you use to do this?
 What command did you use to find the permissions?
 ----------
 
-
+$ ls -l copy_to_backup_.sh.
 
 ==========
 6. Change the permissions so that this file is executable by the user.  Verify the new permissions.
@@ -58,7 +62,7 @@ What command did you use to find the permissions?
 What commands did you use to do this?  What was the output?
 ----------
 
-
+$ chown Users copy_to_backup.sh.
 
 ==========
 7. Try executing the file!
@@ -68,7 +72,7 @@ $ ./copy_to_backup.sh
 What command did you use to try to execute the file?  What happens?
 ----------
 
-
+"bash: ./copy_to_backup.sh: No such file or directory"
 
 ==========
 8. Open the file with nano
@@ -76,7 +80,7 @@ What command did you use to try to execute the file?  What happens?
 What command did you use to do this?
 ----------
 
-
+$ nano copy_to_backup.sh
 
 ==========
 9. In your file, write the following commands:
@@ -88,18 +92,23 @@ c. print out "I'm done backing up"
 Write out the code in your file below...
 ----------
 
-
+mkdir -p backup
+cp *.txt backup
+echo "I'm done backing up"
 
 ==========
 10. Create a directory in your home called test
 ----------
+$cd ~/Desktop
+$mkdir -p test
 ==========
 11. Go into that directory and create two empty files... 1.txt and 2.txt
 
 What commands did you use to do this?
 ----------
 
-
+$ touch 1.txt
+$ touch 2.txt
 
 ==========
 12. Move the script that you created into this directory.
@@ -107,7 +116,7 @@ What commands did you use to do this?
 What commands did you use to do this?
 ----------
 
-
+$ mv copy_to_backup.sh test
 
 ==========
 13. Run your script.
@@ -115,10 +124,13 @@ What commands did you use to do this?
 What commands did you use to do this?
 ----------
 
-
+$ #!/bin/bash copy_to_backup.sh
 
 ==========
 14. Verify that a backup folder was created in your home directory... with copies of the files present.
 
 What commands did you use to do this?  Show the output.
 ----------
+$ mv copy_to_backup.sh. test
+
+2.txt  1.txt  copy_to_backup.sh.
